@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem de Serviço</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <!--Logo-->
+        <section>
+            <figure>
+                <img src="./assets/logo.jpg" alt="Logotipo da Datamix Sistemas">
+                <figcaption>Seja bem-vindo a Datamix Sistemas</figcaption>
+            </figure>
+        </section>
+    </header>
+
+    <main>
+        <!--Tabela-->
+        <section>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="2">Funcionalidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Cadastro de clientes</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Cadastro de ordens de serviço</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Acompanhamento de status</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Geração de PDF ou impressão da OS</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Relatórios</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Para mais funcionalidades, entre em contato com o suporte</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!--INTRO Cadastro de cliente-->
+        <section>
+            <h2>1. Cadastro de clientes</h2>
+            <p>Os dados cadastrados podem ser consultados, editados ou excluídos posteriormente na <abbr
+                    title="Ordem de Serviço">OS</abbr>, garantindo flexibilidade na <strong>gestão da base de
+                    clientes</strong>.</p>
+
+        </section>
+
+        <!--Múltipla escolha-->
+        <fieldset>
+            <legend>Cadastro de Cliente</legend>
+            <section>
+                <h3>Tipo de cadastro</h3>
+                <form>
+                    <input type="radio" value="Pessoa Física" id="p1a" name="tipoDeCadastro">
+                    <label form="p1a">Pessoa Física</label><br>
+                    <input type="radio" value="Pessoa Jurídica" id="p1b" name="tipoDeCadastro">
+                    <label form="p1b">Pessoa Jurídica</label>
+                </form>
+            </section><br>
+
+            <!--Texto-->
+            <section>
+                <form>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="p2" name="nomeCompleto" placeholder="Nome completo">
+                </form>
+            </section>
+
+            <!--E-mail-->
+            <section>
+                <form>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </form>
+            </section>
+
+            <!--Senha-->
+            <section>
+                <h3>Escreva sua senha:</h3>
+                <form>
+                    <input type="password" id="p3" name="senha" placeholder="Senha">
+                </form>
+            </section>
+
+            <!--Data-->
+            <section>
+                <h3>Data do contrato</h3>
+                <form>
+                    <input type="date" id="p4" name="data">
+                </form>
+            </section>
+
+            <!--Seleção múltipla-->
+            <section>
+                <h3>Profissionais presente</h3>
+                <form>
+                    <input type="checkbox" id="p5a" name="profissionaisPresentes" value="Leonel">
+                    <label for="p5a">Técnico</label>
+
+                    <input type="checkbox" id="p5b" name="profissionaisPresentes" value="Mecânico">
+                    <label for="p5b">Mecânico</label>
+
+                    <input type="checkbox" id="p5c" name="profissionaisPresentes" value="Auxiliar">
+                    <label for="p5a">Auxiliar</label>
+                </form>
+            </section>
+
+            <!--Arquivo-->
+            <section>
+                <h3>Selecione um arquivo</h3>
+                <form>
+                    <input type="file" id="p6" name="arquivo">
+                </form>
+            </section>
+
+            <!--Menu suspenso-->
+            <section>
+                <h3>Selecione o Técnico</h3>
+                <form>
+                    <select name="Técnico" id="p7">
+                        <option value="Leonel">Leonel</option>
+                        <option value="José Guilherme">José Guilherme</option>
+                        <option value="Wictor">Wictor</option>
+                        <option value="Dênis">Dênis</option>
+                        <option value="Eduardo">Eduardo</option>
+                        <option value="Helen">Helen</option>
+                    </select>
+                </form>
+            </section>
+
+            <section>
+                <form>
+                    <label for="observacoes">Observações:</label><br>
+                    <textarea id="observacoes" name="observacoes" rows="4" cols="50"
+                        placeholder="Digite suas observações aqui"></textarea>
+                </form>
+            </section>
+        </fieldset>
+        <!--Lista-->
+        <section>
+            <h3>Estado que atendemos</h3>
+            <details>
+                <summary>Clique aqui para ver</summary>
+                <ol>
+                    <li>Mato Grosso</li>
+                </ol>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        Ordem de Serviço LTDA 2025
+    </footer>
+</body>
+
+</html>
